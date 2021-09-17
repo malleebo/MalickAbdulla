@@ -1,117 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+    <link rel="stylesheet" href="styles.css">
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-  
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-body {
-  background-image: url("unsplash.jfif");
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-
-div.head {
-  text-align: center;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malick abdulla </title>
 </head>
+
 <body>
-  <div class="head">
-    <H1 style="color: aliceblue;">Most-Beautiful-Views-In-The-World</H1>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <p style="color: #ccc;"> Here is a gallery of the best views</p>
+        <div class="car">
+            <!-- Add a class with custom styling to this div -->
+            <img src="campbell-3ZUsNJhi_Ik-unsplash.jpg" class="img-fluid" alt="car">
 
+        </div>
 
-  <div class="gallery">
-    <a target="_blank" href="https://blog.cheapism.com/most-beautiful-views-in-the-world/#slide=11">
-      <img src="nieview.jpg" alt="The Twelve Apostles" width="600" height="400">
-    </a>
-    <div class="desc">The Twelve Apostles</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="https://blog.cheapism.com/most-beautiful-views-in-the-world/#image=5">
-      <img src="011618_most_beautiful_views_in_the_world_sli.max-784x410_ZXOqfVp.jpg" alt="Milford Sound" width="600" height="400">
-    </a>
-    <div class="desc">Milford Sound</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="https://blog.cheapism.com/most-beautiful-views-in-the-world/#slide=10">
-      <img src="011618_most_beautiful_views_in_the_world_sli.max-784x410_8rckZqn.jpg" alt="Bagan" width="600" height="400">
-    </a>
-    <div class="desc">Bagan</div>
-  </div>
-<div class="head"> 
-  <br>
-  <br>
-  <p> out of these three places which is your fav</p>
-  <ul>
-    <li>The Twelve Apostles</li>
-    <li>Milford Sound</li>
-    <li>Bagan</li>
-  </ul>
-</div>
-<h1>Pick Your Fav</h1>
+        <div class="alert alert-dark" id="dark" role="alert">
 
-<form>
-    <input type="radio" id="TTA" name="fav_language" value="The Twelve Apostles">
-    <label for="The Twelve Apostles">The Twelve Apostles</label><br>
-    <input type="radio" id="MS" name="Milford Sound" value="Milford Sound" checked="checked">
-    <label for="Milford Sound">Milford Sound</label><br>
-    <input type="radio" id="Bagan" name="fav_language" value="Bagan">
-    <label for="javascript">Bagan</label><br><br>
-    <input type="submit" value="Submit">
-  </form>
+        </div>
 
-  <h1>Summit your info</h1>
+        <!-- Add the same class as before to apply the same styling to this div.
+           ALSO add an id to this div to apply something unique. -->
+    </div>
 
-<form >
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-</form>
+    <!-- STEP 4: CREATE A PHOTO CAROUSEL HERE -->
 
-<h1>On scale 1-4 how bad dp you want to go to these places </h1>
+    <!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
+         and a header row and add at least three more rows. Feel free to change the text.-->
 
-<form>
-  <label for="">1-4</label>
-  <select name="" id="">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
+    <table>
+        <th>
+        <td>A Person's Name</td>
+        <td>Their Fav Animal that starts with the first letter of their first name</td>
+        <td># of toes that animal has</td>
+        </th>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
 
 
-  
+    </div>
 </body>
+
 </html>

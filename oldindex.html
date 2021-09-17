@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    body {
+      background-image: url("unsplash.jfif");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    div.head {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <H1 style="color: aliceblue;">Most-Beautiful-Views-In-The-World</H1>
+
+    <p style="color: #ccc;"> Here is a gallery of the best views</p>
+
+
+    <div class="gallery">
+      <a target="_blank" href="https://blog.cheapism.com/most-beautiful-views-in-the-world/#slide=11">
+        <img src="nieview.jpg" alt="The Twelve Apostles" width="600" height="400">
+      </a>
+      <div class="desc">The Twelve Apostles</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="https://blog.cheapism.com/most-beautiful-views-in-the-world/#image=5">
+        <img src="011618_most_beautiful_views_in_the_world_sli.max-784x410_ZXOqfVp.jpg" alt="Milford Sound" width="600"
+          height="400">
+      </a>
+      <div class="desc">Milford Sound</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="https://blog.cheapism.com/most-beautiful-views-in-the-world/#slide=10">
+        <img src="011618_most_beautiful_views_in_the_world_sli.max-784x410_8rckZqn.jpg" alt="Bagan" width="600"
+          height="400">
+      </a>
+      <div class="desc">Bagan</div>
+    </div>
+    <div class="head">
+      <br>
+      <br>
+      <p> out of these three places which is your fav</p>
+      <ul>
+        <li>The Twelve Apostles</li>
+        <li>Milford Sound</li>
+        <li>Bagan</li>
+      </ul>
+    </div>
+    <h1>Pick Your Fav</h1>
+
+    <form>
+        <input type="radio" id="TTA" name="fav_language" value="The Twelve Apostles">
+        <label for="The Twelve Apostles">The Twelve Apostles</label><br>
+        <input type="radio" id="MS" name="Milford Sound" value="Milford Sound" checked="checked">
+        <label for="Milford Sound">Milford Sound</label><br>
+        <input type="radio" id="Bagan" name="fav_language" value="Bagan">
+        <label for="javascript">Bagan</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>Summit your info</h1>
+
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>On scale 1-4 how bad dp you want to go to these places </h1>
+
+    <form>
+      <label for="">1-4</label>
+      <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+
+
+
+</body>
+
+</html>
